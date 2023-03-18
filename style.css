@@ -1,0 +1,139 @@
+body{
+    margin: 5px;
+    background: black;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+main{
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left h1{
+    color: rgb(46, 180, 46);
+    font-style: inherit;
+}
+
+.img{
+    width: 40vw;
+    height: 70vh;
+    border-radius: 100%;
+}
+
+.right{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 30px;
+    background: rgb(49, 47, 47);
+    border-radius: 25px;
+    border: none;
+}
+
+.card h1{
+    color: rgb(46, 180, 46);
+    font-style: inherit;
+    font-weight: bolder;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    margin-right: -20px;
+}
+
+.text input{
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    background: rgb(170, 164, 164);
+    color: azure;
+    font-size: small;
+    font-style: inherit;
+}
+
+.text label{
+    color: azure;
+    margin-bottom: 5px;
+}
+
+.button{
+    width: 30%;
+    padding: 12px 0px;
+    margin: 20px;
+    border-radius: 10px;
+    font-style: inherit;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    box-shadow: 40px;
+    border: none;
+}
+
+.button:hover{
+    color: azure;
+    background: rgb(46, 180, 46);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .card{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+    .left h1{
+        display: none;
+    }
+    .left{
+        width: 80%;
+        height: auto;
+    }
+    .right{
+        width: 80%;
+        height: auto; 
+    }
+    .img{
+        width: 40vw;
+    }
+    .card{
+        margin: 10px;
+    }
+}
